@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros", "distribuicao-lucros\distribuicao-lucros.csproj", "{7531EDC5-DA63-462C-94CC-8AB8E4E5AFF1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Infrastructure", "{831B2D7A-9ED2-498C-A181-CE6D84F20A3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Distributed Services", "1. Distributed Services", "{BC00BBB6-EF89-4202-A1BD-A383324E9C1E}"
@@ -15,11 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{667F0553-9CDD-45F7-891D-567834B2FEE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros-domain", "distribuicao-lucros-domain\distribuicao-lucros-domain.csproj", "{46CABF61-DB4D-4192-AB00-1F9DF0DE8335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-infra-data-tests", "test\distribuicao-lucros-infra-data-tests\distribuicao-lucros-infra-data-tests.csproj", "{1EB08706-0487-44EF-BB66-55B62EDDF201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros-infra-data", "distribuicao-lucros-infra-data\distribuicao-lucros-infra-data.csproj", "{EE8000BD-FD47-47C6-8F40-E0D80F896DFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-domain", "src\distribuicao-lucros-domain\distribuicao-lucros-domain.csproj", "{76A5035A-A769-4686-957B-F694C4C8D57B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros-application", "distribuicao-lucros-application\distribuicao-lucros-application.csproj", "{A8D9E8E9-A56A-45D3-9F99-ECD5985BF956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-infra-data", "src\distribuicao-lucros-infra-data\distribuicao-lucros-infra-data.csproj", "{B10925B0-8EE3-4798-8AD3-56B6424492A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-application", "src\distribuicao-lucros-application\distribuicao-lucros-application.csproj", "{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros", "src\distribuicao-lucros\distribuicao-lucros.csproj", "{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros-infra", "distribuicao-lucros-infra\distribuicao-lucros-infra.csproj", "{859862D8-1908-4C7A-A61C-ED96D621395E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,31 +31,41 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7531EDC5-DA63-462C-94CC-8AB8E4E5AFF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7531EDC5-DA63-462C-94CC-8AB8E4E5AFF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7531EDC5-DA63-462C-94CC-8AB8E4E5AFF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7531EDC5-DA63-462C-94CC-8AB8E4E5AFF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46CABF61-DB4D-4192-AB00-1F9DF0DE8335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46CABF61-DB4D-4192-AB00-1F9DF0DE8335}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46CABF61-DB4D-4192-AB00-1F9DF0DE8335}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46CABF61-DB4D-4192-AB00-1F9DF0DE8335}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE8000BD-FD47-47C6-8F40-E0D80F896DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE8000BD-FD47-47C6-8F40-E0D80F896DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE8000BD-FD47-47C6-8F40-E0D80F896DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE8000BD-FD47-47C6-8F40-E0D80F896DFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8D9E8E9-A56A-45D3-9F99-ECD5985BF956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8D9E8E9-A56A-45D3-9F99-ECD5985BF956}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8D9E8E9-A56A-45D3-9F99-ECD5985BF956}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8D9E8E9-A56A-45D3-9F99-ECD5985BF956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB08706-0487-44EF-BB66-55B62EDDF201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB08706-0487-44EF-BB66-55B62EDDF201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB08706-0487-44EF-BB66-55B62EDDF201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB08706-0487-44EF-BB66-55B62EDDF201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A5035A-A769-4686-957B-F694C4C8D57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A5035A-A769-4686-957B-F694C4C8D57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A5035A-A769-4686-957B-F694C4C8D57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A5035A-A769-4686-957B-F694C4C8D57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B10925B0-8EE3-4798-8AD3-56B6424492A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10925B0-8EE3-4798-8AD3-56B6424492A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10925B0-8EE3-4798-8AD3-56B6424492A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10925B0-8EE3-4798-8AD3-56B6424492A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859862D8-1908-4C7A-A61C-ED96D621395E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859862D8-1908-4C7A-A61C-ED96D621395E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859862D8-1908-4C7A-A61C-ED96D621395E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859862D8-1908-4C7A-A61C-ED96D621395E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7531EDC5-DA63-462C-94CC-8AB8E4E5AFF1} = {BC00BBB6-EF89-4202-A1BD-A383324E9C1E}
-		{46CABF61-DB4D-4192-AB00-1F9DF0DE8335} = {A48C3EEC-2AB6-4041-B853-AF84BA8BD1CF}
-		{EE8000BD-FD47-47C6-8F40-E0D80F896DFA} = {831B2D7A-9ED2-498C-A181-CE6D84F20A3C}
-		{A8D9E8E9-A56A-45D3-9F99-ECD5985BF956} = {EA8D7968-5606-4E73-85A9-703FCB768257}
+		{1EB08706-0487-44EF-BB66-55B62EDDF201} = {667F0553-9CDD-45F7-891D-567834B2FEE9}
+		{76A5035A-A769-4686-957B-F694C4C8D57B} = {A48C3EEC-2AB6-4041-B853-AF84BA8BD1CF}
+		{B10925B0-8EE3-4798-8AD3-56B6424492A3} = {831B2D7A-9ED2-498C-A181-CE6D84F20A3C}
+		{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD} = {EA8D7968-5606-4E73-85A9-703FCB768257}
+		{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6} = {BC00BBB6-EF89-4202-A1BD-A383324E9C1E}
+		{859862D8-1908-4C7A-A61C-ED96D621395E} = {831B2D7A-9ED2-498C-A181-CE6D84F20A3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D3F4954-5876-4BBC-B650-FE8EBB91819A}

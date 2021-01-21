@@ -2,6 +2,7 @@ using AutoMapper;
 
 using distribuicao_lucros_application.Features.Employees;
 using distribuicao_lucros_application.Features.Employees.Mappers;
+using distribuicao_lucros_application.Features.ProfitSharing;
 
 using distribuicao_lucros_domain.Features.Employees;
 
@@ -40,6 +41,7 @@ namespace distribuicao_lucros
             });
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+            services.AddTransient<IProfitSharingService, ProfitSharingService>();
 
             string databaseUrl = Configuration["DatabaseUrl"];
             string databaseSecret = Configuration["DatabaseSecret"];

@@ -26,5 +26,15 @@ namespace distribuicao_lucros_application.Features.Employees
             
             await employeeRepository.Add(employeesMapped);
         }
+
+        public async Task Delete()
+        {
+            await employeeRepository.Delete();
+        }
+
+        public async Task<IEnumerable<Employee>> GetAll()
+        {
+            return await employeeRepository.GetAll();
+        }
     }
 }

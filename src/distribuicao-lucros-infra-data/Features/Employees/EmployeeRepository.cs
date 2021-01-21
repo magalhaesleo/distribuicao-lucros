@@ -4,6 +4,7 @@ using Firebase.Database;
 using Firebase.Database.Query;
 
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace distribuicao_lucros_infra_data.Features.Employees
@@ -23,6 +24,18 @@ namespace distribuicao_lucros_infra_data.Features.Employees
             {
                 await firebaseClient.Child(Employee.CollectionName).PostAsync(employee);
             } 
+        }
+
+        public async Task Delete()
+        {
+            await firebaseClient.Child(Employee.CollectionName).DeleteAsync();
+        }
+
+        public async Task<IEnumerable<Employee>> GetAll()
+        {
+            var employees = await firebaseClient.Child(Employee.CollectionName).OnceAsync<Employee>();
+
+            return employees.Select(e => e.Object);
         }
     }
 }

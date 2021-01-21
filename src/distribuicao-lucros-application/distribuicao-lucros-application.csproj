@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\distribuicao-lucros-infra\distribuicao-lucros-infra.csproj" />
     <ProjectReference Include="..\distribuicao-lucros-domain\distribuicao-lucros-domain.csproj" />
   </ItemGroup>
 

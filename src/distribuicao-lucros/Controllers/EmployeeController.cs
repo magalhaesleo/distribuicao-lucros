@@ -1,6 +1,8 @@
 ﻿using distribuicao_lucros_application.Features.Employees;
 using distribuicao_lucros_application.Features.Employees.Dto;
 
+using distribuicao_lucros_domain.Features.Employees;
+
 using Microsoft.AspNetCore.Mvc;
 
 using System.Collections.Generic;
@@ -23,7 +25,21 @@ namespace distribuicao_lucros.Controllers
         {
             await employeeService.Add(employees);
 
-            return Ok();
+            return Accepted();
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<Employee>> Get()
+        {
+            return await employeeService.GetAll();
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete()
+        {
+            await employeeService.Delete();
+
+            return Accepted();
         }
     }
 }
