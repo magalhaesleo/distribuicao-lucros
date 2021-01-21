@@ -33,7 +33,7 @@ namespace distribuicao_lucros_infra_data.Features.Employees
 
         public async Task<IEnumerable<Employee>> GetAll()
         {
-            var employees = await firebaseClient.Child(Employee.CollectionName).OnceAsync<Employee>();
+            IReadOnlyCollection<FirebaseObject<Employee>> employees = await firebaseClient.Child(Employee.CollectionName).OnceAsync<Employee>();
 
             return employees.Select(e => e.Object);
         }
