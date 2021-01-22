@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\distribuicao-lucros\distribuicao-lucros-api.csproj" />
+    <ProjectReference Include="..\..\src\distribuicao-lucros\distribuicao-lucros-api.csproj" />
   </ItemGroup>
 
 </Project>
