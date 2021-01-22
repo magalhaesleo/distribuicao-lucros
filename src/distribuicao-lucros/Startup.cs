@@ -5,6 +5,10 @@ using distribuicao_lucros_application.Features.Employees.Mappers;
 using distribuicao_lucros_application.Features.ProfitSharing;
 
 using distribuicao_lucros_domain.Features.Employees;
+using distribuicao_lucros_domain.Features.ProfitSharing;
+using distribuicao_lucros_domain.Helpers;
+
+using distribuicao_lucros_infra.Helpers;
 
 using distribuicao_lucros_infra_data.Features.Employees;
 
@@ -42,6 +46,8 @@ namespace distribuicao_lucros
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddTransient<IProfitSharingService, ProfitSharingService>();
+            services.AddTransient<IProfitSharingCalculator, ProfitSharingCalculator>();
+            services.AddTransient<IDateTimeHelper, DatetimeHelper>();
 
             string databaseUrl = Configuration["DatabaseUrl"];
             string databaseSecret = Configuration["DatabaseSecret"];

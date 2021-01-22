@@ -14,10 +14,12 @@ namespace distribuicao_lucros_application.Features.ProfitSharing
     public class ProfitSharingService : IProfitSharingService
     {
         private readonly IEmployeeService employeeService;
+        private readonly IProfitSharingCalculator profitSharingCalculator;
 
-        public ProfitSharingService(IEmployeeService employeeService)
+        public ProfitSharingService(IEmployeeService employeeService, IProfitSharingCalculator profitSharingCalculator)
         {
             this.employeeService = employeeService;
+            this.profitSharingCalculator = profitSharingCalculator;
         }
 
         public async Task<ProfitSharingResult> GetProfitSharingResult(double availableValue)
@@ -30,7 +32,7 @@ namespace distribuicao_lucros_application.Features.ProfitSharing
 
             foreach (Employee employee in employees)
             {
-                double profitSharing = employee.GetProfitSharing();
+                double profitSharing = profitSharingCalculator.GetProfitSharing(employee);
 
                 totalValue += profitSharing;
 

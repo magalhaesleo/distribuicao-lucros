@@ -5,4 +5,8 @@
     <RootNamespace>distribuicao_lucros_infra</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\distribuicao-lucros-domain\distribuicao-lucros-domain.csproj" />
+  </ItemGroup>
+
 </Project>
