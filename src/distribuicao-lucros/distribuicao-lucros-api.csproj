@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>distribuicao_lucros</RootNamespace>
+    <RootNamespace>distribuicao_lucros_api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

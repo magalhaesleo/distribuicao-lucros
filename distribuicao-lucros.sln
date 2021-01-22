@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-infra-d
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-application", "src\distribuicao-lucros-application\distribuicao-lucros-application.csproj", "{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros", "src\distribuicao-lucros\distribuicao-lucros.csproj", "{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-api", "src\distribuicao-lucros\distribuicao-lucros-api.csproj", "{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-infra", "src\distribuicao-lucros-infra\distribuicao-lucros-infra.csproj", "{9F2534D9-F6CF-422D-B677-DEC51DC6F2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros-api-tests", "distribuicao-lucros-api-tests\distribuicao-lucros-api-tests.csproj", "{979C4B56-B97D-4740-89D8-04CFED89BA28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{9F2534D9-F6CF-422D-B677-DEC51DC6F2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F2534D9-F6CF-422D-B677-DEC51DC6F2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F2534D9-F6CF-422D-B677-DEC51DC6F2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979C4B56-B97D-4740-89D8-04CFED89BA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979C4B56-B97D-4740-89D8-04CFED89BA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979C4B56-B97D-4740-89D8-04CFED89BA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979C4B56-B97D-4740-89D8-04CFED89BA28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{86EAC4F6-9BA4-46EE-88F9-BF647017F9FD} = {EA8D7968-5606-4E73-85A9-703FCB768257}
 		{CB0E1A5D-60AA-4BB9-A3C5-3430D4FC1AA6} = {BC00BBB6-EF89-4202-A1BD-A383324E9C1E}
 		{9F2534D9-F6CF-422D-B677-DEC51DC6F2B4} = {831B2D7A-9ED2-498C-A181-CE6D84F20A3C}
+		{979C4B56-B97D-4740-89D8-04CFED89BA28} = {667F0553-9CDD-45F7-891D-567834B2FEE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D3F4954-5876-4BBC-B650-FE8EBB91819A}
