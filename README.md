@@ -7,7 +7,7 @@ criar testes de unidade e controlar com mais fácilidade o ciclo de vida dos obj
 
 Para executar a aplicação é necessário possuir visual studio e .net 5.
 
-Após abrir o arquivo `distribuicao-lucros.sln` com o visual studio, clique com o botão direito do mouse no projeto e `distribuicao-lucros-api` e selecione `Set as startup Project`.
+Após abrir o arquivo `distribuicao-lucros.sln` com o visual studio, clique com o botão direito do mouse no projeto `distribuicao-lucros-api` e selecione `Set as startup Project`.
 
 Em seguida execute o projeto através da tecla F5. A conexão com o Firebase Database(já está configurada no arquivo appsettings.json).
 
