@@ -2,21 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>distribuicao_lucros_application_tests</RootNamespace>
+    <RootNamespace>distribuicao_lucros_domain_tests</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
 	<PackageReference Include="FluentAssertions" Version="5.10.3" />
-	<PackageReference Include="Moq" Version="4.16.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\distribuicao-lucros-application\distribuicao-lucros-application.csproj" />
+    <ProjectReference Include="..\..\src\distribuicao-lucros-domain\distribuicao-lucros-domain.csproj" />
   </ItemGroup>
 
 </Project>

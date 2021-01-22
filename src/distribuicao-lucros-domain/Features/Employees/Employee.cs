@@ -12,9 +12,19 @@ namespace distribuicao_lucros_domain.Features.Employees
         public double GrossSalary { get; set; }
         public DateTime AdmissionDate { get; set; }
 
+        private readonly Func<DateTime> Now;
+
+        public Employee(Func<DateTime> nowFunc = null)
+        {
+            if (nowFunc == null)
+                Now = () => DateTime.Now;
+            else
+                Now = nowFunc;
+        }
+
         private int GetWeightByAdmissionDate()
         {
-            var now = DateTime.Now;
+            var now = Now();
 
             int days = (now - AdmissionDate).Days;
 

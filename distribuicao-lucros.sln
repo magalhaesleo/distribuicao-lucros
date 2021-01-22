@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distribuicao-lucros-api-tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros-application-tests", "test\distribuicao-lucros-application-tests\distribuicao-lucros-application-tests.csproj", "{D8EDCCB2-E4F4-4C04-9056-DCE5DF7CEEDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distribuicao-lucros-domain-tests", "test\distribuicao-lucros-domain-tests\distribuicao-lucros-domain-tests.csproj", "{5B7F6DC8-A5B9-4581-9B52-14BF1E8FF2EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{D8EDCCB2-E4F4-4C04-9056-DCE5DF7CEEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8EDCCB2-E4F4-4C04-9056-DCE5DF7CEEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8EDCCB2-E4F4-4C04-9056-DCE5DF7CEEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B7F6DC8-A5B9-4581-9B52-14BF1E8FF2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B7F6DC8-A5B9-4581-9B52-14BF1E8FF2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B7F6DC8-A5B9-4581-9B52-14BF1E8FF2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B7F6DC8-A5B9-4581-9B52-14BF1E8FF2EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{9F2534D9-F6CF-422D-B677-DEC51DC6F2B4} = {831B2D7A-9ED2-498C-A181-CE6D84F20A3C}
 		{81A3A140-B230-4A91-8CB2-D79A9A91B468} = {667F0553-9CDD-45F7-891D-567834B2FEE9}
 		{D8EDCCB2-E4F4-4C04-9056-DCE5DF7CEEDD} = {667F0553-9CDD-45F7-891D-567834B2FEE9}
+		{5B7F6DC8-A5B9-4581-9B52-14BF1E8FF2EE} = {667F0553-9CDD-45F7-891D-567834B2FEE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D3F4954-5876-4BBC-B650-FE8EBB91819A}
