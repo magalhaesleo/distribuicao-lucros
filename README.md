@@ -2,6 +2,9 @@
 
 O objetivo deste projeto é armazenar uma lista de funcionários e em seguida calcular a participação nos lucros de cada funcionário.
 
+A arquitetura da aplicação foi organizada em um DDD, utilizando técnicas de inversão de controle, inversão de dependencia e injeção de dependencia, possibilitando
+criar testes de unidade e controlar com mais fácilidade o ciclo de vida dos objetos.
+
 Para executar a aplicação é necessário possuir visual studio e .net 5.
 
 Após abrir o arquivo `distribuicao-lucros.sln` com o visual studio, clique com o botão direito do mouse no projeto e `distribuicao-lucros-api` e selecione `Set as startup Project`.
