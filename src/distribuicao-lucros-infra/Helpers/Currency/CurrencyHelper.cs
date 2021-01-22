@@ -2,9 +2,9 @@
 {
     public static class CurrencyHelper
     {
-        public static string ToCurrency(this double obj)
+        public static string ToCurrency(this double value)
         {
-            return obj.ToString("C");
+            return value.ToString("C");
         }
     }
 }
