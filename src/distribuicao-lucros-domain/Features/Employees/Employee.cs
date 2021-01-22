@@ -90,7 +90,7 @@ namespace distribuicao_lucros_domain.Features.Employees
 
             int pfs = GetWeightBySalary();
 
-            return (((GrossSalary * pta) + (GrossSalary * paa)) /  pfs) * 12;
+            return Math.Round((((GrossSalary * pta) + (GrossSalary * paa)) /  pfs) * 12, 2);
         }
     }
 }
