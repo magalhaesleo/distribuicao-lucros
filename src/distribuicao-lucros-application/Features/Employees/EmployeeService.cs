@@ -22,7 +22,7 @@ namespace distribuicao_lucros_application.Features.Employees
 
         public async Task Add(IEnumerable<EmployeeDTO> employees)
         {
-            var employeesMapped = mapper.Map<IEnumerable<Employee>>(employees);
+            IEnumerable<Employee> employeesMapped = mapper.Map<IEnumerable<Employee>>(employees);
             
             await employeeRepository.Add(employeesMapped);
         }
