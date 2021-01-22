@@ -36,7 +36,7 @@ namespace distribuicao_lucros.Controllers
 
 
         /// <summary>
-        /// Busca todas os funcinários armazenados na base
+        /// Busca todas os funcionários armazenados na base
         /// </summary>
         /// <response code="200">Ok</response>
         [HttpGet]
